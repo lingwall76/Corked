@@ -1,10 +1,12 @@
 //
 //  LoginViewController.m
-//  ubercam
+//  Corked
 //
-//  Created by Daniel Sheng Xu on 2/23/2014.
-//  Copyright (c) 2014 danielxu. All rights reserved.
+//  Created by Sarah on 6/24/15.
+//  Copyright (c) 2015 DevMountain. All rights reserved.
 //
+
+
 
 #import "LoginViewController.h"
 #import <Parse/Parse.h>

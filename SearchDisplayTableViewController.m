@@ -1,10 +1,11 @@
 //
 //  SearchDisplayTableViewController.m
-//  ubercam
+//  Corked
 //
-//  Created by Daniel Xu on 2014-10-21.
-//  Copyright (c) 2014 danielxu. All rights reserved.
+//  Created by Sarah on 6/24/15.
+//  Copyright (c) 2015 DevMountain. All rights reserved.
 //
+
 
 #import "SearchDisplayTableViewController.h"
 
