@@ -60,6 +60,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (object[@"username"]) {
         cell.textLabel.text = object[@"username"];
+        cell.textLabel.font = [UIFont fontWithName:@"Papyrus" size:15];
+
     }
     return cell;
 }

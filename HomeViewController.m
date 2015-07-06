@@ -42,8 +42,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-   // self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CorkedNavBar4"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -79,7 +77,6 @@
     
 }
 
-// return objects in a different indexpath order. in this case we return object based on the section, not row, the default is row
 
 - (PFObject *)objectAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section < self.objects.count) {

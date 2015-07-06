@@ -10,6 +10,7 @@
 #import "CameraViewController.h"
 #import <MobileCoreServices/UTCoreTypes.h>
 #import <Parse/Parse.h>
+
 @interface CameraViewController ()
 @property (nonatomic, strong) UIImagePickerController *imagePicker;
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
@@ -136,17 +137,6 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.titleTextField resignFirstResponder];
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

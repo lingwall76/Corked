@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 DevMountain. All rights reserved.
 //
 
-
-
 #import "DetailViewController.h"
 #import "AppDelegate.h"
 #import <Parse/Parse.h>

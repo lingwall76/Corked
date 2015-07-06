@@ -40,9 +40,7 @@
 }
 
 - (void)presentLoginControllerAnimated:(BOOL)animated {
-    //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    //UINavigationController *loginNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"loginNav"];
-    //[self.window.rootViewController presentViewController:loginNavigationController animated:animated completion:nil];
+    
     ParseLoginViewController *loginViewController = [[ParseLoginViewController alloc] init];
     loginViewController.delegate = self;
     [loginViewController setFields:PFLogInFieldsFacebook];

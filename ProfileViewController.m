@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *followerNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *followingNumberLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *privacySwitch;
+@property (weak, nonatomic) IBOutlet UILabel *bioLabel;
 @end
 
 @implementation ProfileViewController
@@ -38,17 +39,20 @@
     [self.privacySwitch addTarget:self action:@selector(setState:) forControlEvents:UIControlEventValueChanged];
     BOOL isPrivate = [[PFUser currentUser][@"isPrivate"] boolValue];
     [self.privacySwitch setOn:isPrivate animated:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    
     // Dispose of any resources that can be recreated.
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self updateUserStatus];
+    
 }
 
 - (void)updateUserStatus {
@@ -140,6 +144,7 @@
     // save it immediately
     [user saveInBackground];
 }
+
 
 
 @end
